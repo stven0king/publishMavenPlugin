@@ -1,7 +1,7 @@
 package com.tzx
 
-import com.hrg.cmd.CmdGit
-import com.hrg.utils.ColorPrint
+import com.tzx.cmd.CmdGit
+import com.tzx.utils.ColorPrint
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 

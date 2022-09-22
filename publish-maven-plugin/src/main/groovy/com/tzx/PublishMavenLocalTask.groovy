@@ -2,7 +2,7 @@ package com.tzx
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
-import com.hrg.utils.*
+import com.tzx.utils.*
 
 /**
  * Created by Tanzhenxing

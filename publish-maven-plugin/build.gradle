@@ -28,7 +28,7 @@ project.afterEvaluate {
     publishing {
         publications {
             mavenJava(MavenPublication) {
-                groupId = 'com.wuba.hrg.plugins'
+                groupId = 'com.tzx.plugins'
                 artifactId = 'PublishMaven'
                 version = '0.0.8'
                 from components.java
@@ -37,10 +37,10 @@ project.afterEvaluate {
         repositories {
             maven {
                 allowInsecureProtocol = true
-                url = "http://artifactory.58corp.com:8081/artifactory/android-local/"
+                url = ""
                 credentials {
-                    username = "bangbang"
-                    password = "bangbang1215"
+                    username = ""
+                    password = ""
                 }
             }
             //mavenLocal()

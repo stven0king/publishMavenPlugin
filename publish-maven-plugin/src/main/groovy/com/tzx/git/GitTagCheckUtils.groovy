@@ -1,8 +1,8 @@
 package com.tzx.git
 
-import com.hrg.PublishMavenConfig
-import com.hrg.cmd.CmdGit
-import com.hrg.utils.ColorPrint
+import com.tzx.PublishMavenConfig
+import com.tzx.cmd.CmdGit
+import com.tzx.utils.ColorPrint
 
 /**
  * Created by Tanzhenxing

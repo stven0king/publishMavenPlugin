@@ -1,7 +1,7 @@
 package com.tzx
 
 
-import com.hrg.git.GitTagCheckUtils
+import com.tzx.git.GitTagCheckUtils
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 

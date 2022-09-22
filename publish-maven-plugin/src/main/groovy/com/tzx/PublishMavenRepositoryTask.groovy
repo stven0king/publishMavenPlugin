@@ -1,6 +1,6 @@
 package com.tzx
 
-import com.hrg.utils.ColorPrint
+import com.tzx.utils.ColorPrint
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 

@@ -1,6 +1,6 @@
 package com.tzx.cmd
 
-import com.hrg.git.GitTagResult
+import com.tzx.git.GitTagResult
 
 import java.util.regex.Matcher
 import java.util.regex.Pattern
