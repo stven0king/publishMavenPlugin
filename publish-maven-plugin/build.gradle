@@ -1,0 +1,49 @@
+apply plugin: 'groovy'
+apply plugin: 'maven-publish'
+
+
+//声明资源代码路径
+sourceSets {
+    main {
+        groovy {
+            srcDir 'src/main/groovy'
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+
+}
+
+
+//声明依赖的包
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation gradleApi()//gradle sdk
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:3.5.3'
+}
+
+project.afterEvaluate {
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                groupId = 'com.wuba.hrg.plugins'
+                artifactId = 'PublishMaven'
+                version = '0.0.8'
+                from components.java
+            }
+        }
+        repositories {
+            maven {
+                allowInsecureProtocol = true
+                url = "http://artifactory.58corp.com:8081/artifactory/android-local/"
+                credentials {
+                    username = "bangbang"
+                    password = "bangbang1215"
+                }
+            }
+            //mavenLocal()
+        }
+    }
+}
