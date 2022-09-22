@@ -1,4 +1,4 @@
-package com.hrg.git
+package com.tzx.git
 
 import com.hrg.PublishMavenConfig
 import com.hrg.cmd.CmdGit

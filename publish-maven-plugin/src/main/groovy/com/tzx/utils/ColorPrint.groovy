@@ -1,4 +1,4 @@
-package com.hrg.utils
+package com.tzx.utils
 
 /**
  * Created by Tanzhenxing

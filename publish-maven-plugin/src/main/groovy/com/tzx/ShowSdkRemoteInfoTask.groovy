@@ -1,4 +1,4 @@
-package com.hrg
+package com.tzx
 
 
 import com.hrg.git.GitTagCheckUtils
@@ -8,9 +8,9 @@ import org.gradle.api.tasks.TaskAction
 /**
  * Created by Tanzhenxing
  * Date: 2022/5/16 11:34
- * Description: 校验当前配置是否能够打AAR包
+ * Description: 展示远程aar的信息
  */
-class PublishSdkCheckTask extends DefaultTask {
+class ShowSdkRemoteInfoTask extends DefaultTask {
     /**
      * 被TaskAction注解标记的，执行与gradle执行阶段的代码
      */
@@ -18,7 +18,7 @@ class PublishSdkCheckTask extends DefaultTask {
     void doAction() {
         println("\n\n")
         PublishMavenConfig publishMavenConfig = project.extensions.getByName("publishMavenConfig")
-        GitTagCheckUtils.aarCheck(project.projectDir.absolutePath, publishMavenConfig)
+        GitTagCheckUtils.showAarRemoteInfo(publishMavenConfig, project.projectDir.absolutePath)
         println("\n\n")
     }
 }

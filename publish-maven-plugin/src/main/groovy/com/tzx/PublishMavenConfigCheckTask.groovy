@@ -1,4 +1,4 @@
-package com.hrg
+package com.tzx
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException

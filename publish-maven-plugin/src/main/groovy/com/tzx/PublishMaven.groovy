@@ -1,8 +1,6 @@
-package com.hrg
+package com.tzx
 
 import com.android.build.gradle.AndroidConfig
-import com.hrg.cmd.CmdGit
-import com.hrg.utils.ColorPrint
 import org.gradle.api.GradleException
 import org.gradle.api.Plugin
 import org.gradle.api.Project

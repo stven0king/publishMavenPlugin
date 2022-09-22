@@ -1,4 +1,4 @@
-package com.hrg.cmd
+package com.tzx.cmd
 
 import com.hrg.git.GitTagResult
 
